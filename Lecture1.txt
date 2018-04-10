@@ -1,7 +1,7 @@
 Note: These notes are based on my understanding of the lecture and may not be completely and accurate.
 Lecture1: Introduction
 
-What is security? 
+# What is security? 
 	Goal vs. Adversary
 
 Security involves 3 concepts:
