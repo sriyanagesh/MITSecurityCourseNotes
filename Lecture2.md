@@ -57,7 +57,7 @@ Rule 2: The size information is stored in log 2 value
 Rule 3: A linear table called the bounds table is used to store the bounds
 information
 Rule 4: Memory is allocated in terms of slot size which is a power of 2
-Example1:int `*p = malloc(32)
+Example1:int ``*p = malloc(32)
 Here, a 32 byte block is assigned to p. Assume slot_size=16
 In t[p/slot_size]=5, t[(p/slot_size)+1]=5
 During pointer operation, the size and the range of p can be determine
@@ -70,7 +70,7 @@ int *r = q + 16 // results in an error since r is at a position great than
 half slot size
 int *s = p + 30 // No error since s is at 70 which is 64 + 6 (6 is less than
 half slot_size). If you dereference s, it will result in an error
-int *t = s - 32 // s is brought back in bounds`
+int *t = s - 32 // s is brought back in bounds``
  
 ##Cons
 
