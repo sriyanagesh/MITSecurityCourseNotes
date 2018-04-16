@@ -74,5 +74,10 @@ int *t = s - 32 // s is brought back in bounds``
  
 ##Cons
 
-*Space
- 
+*Space*
+	Extra space to store the bounds table
+*CPU*
+	Extra processing time for the arithmetic operations
+*False alarms*
+ 	The algorithm might throw an error when out of bounds memory address is assigned and not dereferenced yet
+
