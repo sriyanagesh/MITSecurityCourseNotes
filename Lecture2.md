@@ -72,6 +72,9 @@ int *s = p + 30 // No error since s is at 70 which is 64 + 6 (6 is less than
 half slot_size). If you dereference s, it will result in an error
 int *t = s - 32 // s is brought back in bounds``
  
+What about backward compatibility?
+Baggy bounds algorithm works fine with uninstrumented code as well. The table which holds the sizes of the memory allocates is initially assigned the value 31. 2^31 is the highest amount memory that can be allocated. So, in the case of uninstrumented code, the memory is never out of bounds.
+
 ##Cons
 
 *Space*
