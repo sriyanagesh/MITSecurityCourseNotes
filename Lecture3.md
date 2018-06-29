@@ -18,7 +18,7 @@ Note: Code is stored in a separate segment called as Code Segment
 
 Other ways of handling/detecting buffer overflow attacks:
 
-1. Non-executable memory - Attacker can overflow the buffer to insert code in the stack and then point the return address to that code. However, by making the stack/heap non-executable, this can be prevented. 
+1. Non-executable memory - Attacker can overflow the stack and make the function return address point to a page containing code of his choice. However, by making the page non-executable (Write exclusive Execute), this can be prevented. How can you make something non-executable? The instruction pointer cannot point to anywhere on that page.
 
 2. Randomized address space 
 
